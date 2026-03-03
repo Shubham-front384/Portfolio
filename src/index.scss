@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url("../src/assets/FoundersGrotesk-Semibold.ttf");
+}
+
+@font-face {
+  font-family: NeueMontreal;
+  src: url("../src/assets/NeueMontreal-Regular.ttf");
+}
+
+:root {
+  --light: #F2EEC2;
+  --dark: #141414;
+  --mouse-x: 0;
+  --mouse-y: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html,
+body {
+  background: var(--dark);
+  color: var(--light);
+  font-family: FoundersGrotesk;
+}
