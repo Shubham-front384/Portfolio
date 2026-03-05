@@ -36,10 +36,10 @@ const Home = () => {
 
         <ul className="social-links">
           <li>
-            <a href="http://">github</a>
+            <a href="https://github.com/" target='_blank'>github</a>
           </li>
           <li>
-            <a href="http://">resume</a>
+            <a href="http://" target='_blank'>resume</a>
           </li>
         </ul>
 
