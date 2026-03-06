@@ -1,10 +1,18 @@
 import reactSticker from '../assets/Img/react-sticker.png'; import nodeSticker from '../assets/Img/node-sticker.png'; import gitSticker from '../assets/Img/git-sticker.png'; import gitHubSticker from '../assets/Img/github-sticker.png'; import jsSticker from '../assets/Img/js-sticker.png'; import htmlSticker from '../assets/Img/html-sticker.png'; import cssSticker from '../assets/Img/css-sticker.png'; import mongoSticker from '../assets/Img/mongo-sticker.png';
+import tierImg from '../assets/Img/tierList.png'
+import tekzyImg from '../assets/Img/tekzy.png'
+import animeInfoImg from '../assets/Img/animeInfo.png'
+import pianoImg from '../assets/Img/piano.png'
+import magicStudioImg from '../assets/Img/magicStudio.png'
+import colorGeneratorImg from '../assets/Img/colorGenerator.png'
+import solusImg from '../assets/Img/solus.png'
+import luxeDentalImg from '../assets/Img/luxeDental.png'
 
 export const projects = [
   {
     id: 1,
     name: "Tier List",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: tierImg,
     github: "https://github.com/Shubham-front384/Tier-List",
     language: ["react", "tailwind css"],
     liveLink: "https://tier-list-app.netlify.app/"
@@ -12,7 +20,7 @@ export const projects = [
   {
     id: 2,
     name: "tekzy",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: tekzyImg,
     github: "https://github.com/Shubham-front384/Tekzy",
     language: ["react", "gsap", "scss"],
     liveLink: "https://tekzy.netlify.app/"
@@ -20,7 +28,7 @@ export const projects = [
   {
     id: 3,
     name: "anime info",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: animeInfoImg,
     github: "https://github.com/Shubham-front384/Anime-Info",
     language: ["react"],
     liveLink: "https://all-anime-info.netlify.app/"
@@ -28,7 +36,7 @@ export const projects = [
   {
     id: 4,
     name: "piano",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: pianoImg,
     github: "https://github.com/Shubham-front384/Piano",
     language: ["html", "css", "js"],
     liveLink: "https://chimerical-empanada-c55f5f.netlify.app/"
@@ -36,7 +44,7 @@ export const projects = [
   {
     id: 5,
     name: "magic studio",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: magicStudioImg,
     github: "https://github.com/Shubham-front384/Magic-Studio",
     language: ["react", "tailwind css"],
     liveLink: "https://magic-stud.netlify.app/"
@@ -44,7 +52,7 @@ export const projects = [
   {
     id: 6,
     name: "color generator",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: colorGeneratorImg,
     github: "https://github.com/Shubham-front384/Color-Generator",
     language: ["html", "css", "js"],
     liveLink: "https://benevolent-clafoutis-93517e.netlify.app/"
@@ -52,7 +60,7 @@ export const projects = [
   {
     id: 7,
     name: "solus",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: solusImg,
     github: "https://github.com/Shubham-front384/Solus",
     language: ["html", "css", "js"],
     liveLink: "https://celadon-cranachan-cceb94.netlify.app/"
@@ -60,7 +68,7 @@ export const projects = [
   {
     id: 8,
     name: "luxe dental",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: luxeDentalImg,
     github: "https://github.com/Shubham-front384/Dentist-Website",
     language: ["react", "gsap", "scss"],
     liveLink: "https://moonlit-kangaroo-2a9af9.netlify.app/"
@@ -69,7 +77,7 @@ export const projects = [
     id: 9,
     name: "kanban",
     image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
+    github: "https://github.com/Shubham-front384/Kanban",
     language: ["html", "css", "js"],
     liveLink: "https://tekzy.netlify.app/"
   },
@@ -115,14 +123,6 @@ export const projects = [
   },
   {
     id: 15,
-    name: "url shortner",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/URL-Shortner",
-    language: ["react", "scss", "node", "express"],
-    liveLink: "https://url-shortner-qs1f.onrender.com"
-  },
-  {
-    id: 16,
     name: "task",
     image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
     github: "https://github.com/Shubham-front384/URL-Shortner",
@@ -130,7 +130,7 @@ export const projects = [
     liveLink: "https://url-shortner-qs1f.onrender.com"
   },
   {
-    id: 17,
+    id: 16,
     name: "food reel",
     image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
     github: "https://github.com/Shubham-front384/Food-Reel",
