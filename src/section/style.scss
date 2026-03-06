@@ -391,8 +391,7 @@
 
       .profile-status {
         .project,
-        .award,
-        .backend {
+        .award {
           list-style: none;
           padding: 1.5rem 2rem;
           border-radius: 14px;
@@ -438,6 +437,7 @@
 
           background: tomato;
           color: white;
+          z-index: 2;
         }
 
         .award {
@@ -447,12 +447,38 @@
 
           background: #f2eec2;
           color: #1a1a1a;
+          z-index: 2;
         }
 
-        .backend {
+        .languages {
+          list-style: none;
+          padding: 1.5rem 2rem;
+          border-radius: 14px;
+
           position: absolute;
-          bottom: 15%;
-          left: 20%;
+          bottom: 10%;
+          left: 5%;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          width: 300px;
+          gap: 0.4rem;
+
+          background: #1a1a1a;
+          backdrop-filter: blur(10px);
+          box-shadow:
+            inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+            inset -4px -4px 10px rgba(255, 255, 255, 0.3);
+
+          li {
+            img {
+              width: 52px;
+              object-fit: contain;
+            }
+          }
         }
       }
     }
@@ -469,6 +495,39 @@
       text-transform: uppercase;
       font-size: 5rem;
       margin-bottom: 2rem;
+    }
+
+    .project-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0;
+
+      button {
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid #e5e5e5;
+        background: transparent;
+
+        font-size: 14px;
+        font-weight: 500;
+        color: #fafafa;
+        background: #1a1a1a;
+        text-transform: uppercase;
+
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+          border-color: #000;
+        }
+
+        &.active {
+          background: tomato;
+          color: #fff;
+          border-color: #000;
+        }
+      }
     }
 
     .projects {
@@ -564,13 +623,106 @@
         text-transform: uppercase;
         color: #f2eec2;
         text-decoration: none;
+        border: none;
+        cursor: pointer;
 
         padding: 1rem 2.75rem;
         border-radius: 20px;
         background: tomato;
       }
+      &:active {
+        transform: scale(0.95);
+      }
     }
   }
+}
+
+// Contact Section
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  background: #f2eec2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  padding: 40px;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: tomato;
+}
+
+.contact-left p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.contact-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-left input,
+.contact-left textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.contact-left input:focus,
+.contact-left textarea:focus {
+  border-color: #000;
+}
+
+.contact-left textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-left button {
+  padding: 12px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-left button:hover {
+  background: #333;
+}
+
+/* RIGHT SIDE IMAGE */
+
+.contact-right {
+  display: none;
+}
+
+.contact-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -654,10 +806,6 @@
 
           .award {
             top: 35%;
-          }
-
-          .backend {
-            left: 38%;
           }
         }
       }
@@ -747,6 +895,14 @@
           }
         }
       }
+    }
+  }
+
+  // Contact Section
+  @media (min-width: 1024px) {
+    .contact-right {
+      display: block;
+      flex: 1;
     }
   }
 }

@@ -1,3 +1,5 @@
+import reactSticker from '../assets/Img/react-sticker.png'; import nodeSticker from '../assets/Img/node-sticker.png'; import gitSticker from '../assets/Img/git-sticker.png'; import gitHubSticker from '../assets/Img/github-sticker.png'; import jsSticker from '../assets/Img/js-sticker.png'; import htmlSticker from '../assets/Img/html-sticker.png'; import cssSticker from '../assets/Img/css-sticker.png'; import mongoSticker from '../assets/Img/mongo-sticker.png';
+
 export const projects = [
   {
     id: 1,
@@ -135,4 +137,15 @@ export const projects = [
     language: ["react", "scss", "node", "express"],
     liveLink: "https://food-reel-2cry.onrender.com/"
   },
+];
+
+export const languageImg = [
+  { id: 1, image: reactSticker },
+  { id: 2, image: nodeSticker },
+  { id: 3, image: jsSticker },
+  { id: 4, image: htmlSticker },
+  { id: 5, image: cssSticker },
+  { id: 6, image: mongoSticker },
+  { id: 7, image: gitSticker },
+  { id: 8, image: gitHubSticker },
 ];
