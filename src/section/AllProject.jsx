@@ -7,7 +7,7 @@ const AllProject = () => {
       <div className="project-container">
         <h2>project</h2>
         <div className="projects">
-          {projects.map((project) => (
+          {projects.slice(0, 6).map((project) => (
             <div className="project" key={project.id}>
 
               <div className="project-img">
@@ -43,7 +43,12 @@ const AllProject = () => {
             </div>
           ))}
         </div>
-
+        
+        <div className="link">
+          <a href="http://" className="all-project">
+            all project
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -552,6 +552,24 @@
         }
       }
     }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .all-project {
+        margin-block: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f2eec2;
+        text-decoration: none;
+
+        padding: 1rem 2.75rem;
+        border-radius: 20px;
+        background: tomato;
+      }
+    }
   }
 }
 
@@ -655,7 +673,7 @@
         .project {
           .project-data,
           .project-language {
-            opacity: 0;
+            opacity: 1;
             transform: translateY(10px);
             transition: all 0.4s ease;
           }
@@ -696,6 +714,38 @@
     .about-container {
       .about-panel:nth-child(1) {
         padding: 0px;
+      }
+    }
+  }
+
+  // Project Section
+  .project-section {
+    .project-container {
+      .projects {
+        .project {
+          .project-img {
+            img {
+              height: 350px;
+            }
+          }
+
+          .project-info {
+            .project-data,
+            .project-language {
+              opacity: 0;
+              transform: translateY(10px);
+              transition: all 0.4s ease;
+            }
+          }
+
+          &:hover {
+            .project-data,
+            .project-language {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
       }
     }
   }
