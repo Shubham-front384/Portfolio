@@ -8,6 +8,9 @@ import colorGeneratorImg from '../assets/Img/colorGenerator.png'
 import solusImg from '../assets/Img/solus.png'
 import luxeDentalImg from '../assets/Img/luxeDental.png'
 import kanbanBoardImg from '../assets/Img/kanbanBoard.png'
+import HungryTigerImg from '../assets/Img/hungryTiger.png'
+import ochiImg from '../assets/Img/ochi.png'
+import foodReelImg from '../assets/Img/foodReel.png'
 
 export const projects = [
   {
@@ -71,7 +74,7 @@ export const projects = [
     name: "luxe dental",
     image: luxeDentalImg,
     github: "https://github.com/Shubham-front384/Dentist-Website",
-    language: ["react", "gsap", "scss"],
+    language: ["html", "css"],
     liveLink: "https://moonlit-kangaroo-2a9af9.netlify.app/"
   },
   {
@@ -82,58 +85,58 @@ export const projects = [
     language: ["html", "css", "js"],
     liveLink: "https://kanban-task-proj.netlify.app/"
   },
-  {
-    id: 10,
-    name: "snake game",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
-    language: ["html", "css", "js"],
-    liveLink: "https://tekzy.netlify.app/"
-  },
-  {
-    id: 11,
-    name: "image editor",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
-    language: ["html", "css", "js"],
-    liveLink: "https://tekzy.netlify.app/"
-  },
+  // {
+  //   id: 10,
+  //   name: "snake game",
+  //   image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+  //   github: "https://github.com/Shubham-front384/Tekzy",
+  //   language: ["html", "css", "js"],
+  //   liveLink: "https://tekzy.netlify.app/"
+  // },
+  // {
+  //   id: 11,
+  //   name: "image editor",
+  //   image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+  //   github: "https://github.com/Shubham-front384/Tekzy",
+  //   language: ["html", "css", "js"],
+  //   liveLink: "https://tekzy.netlify.app/"
+  // },
   {
     id: 12,
     name: "hungry tiger",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
+    image: HungryTigerImg,
+    github: "https://github.com/Shubham-front384/Hungry-Tiger",
     language: ["react", "gsap", "scss"],
-    liveLink: "https://tekzy.netlify.app/"
+    liveLink: "https://tekzy.netlify.app/" // ye galat link hai abhi ke liye
   },
   {
     id: 13,
     name: "ouchi",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
+    image: ochiImg,
+    github: "https://github.com/Shubham-front384/Ouchi-Design",
     language: ["react", "gsap", "scss"],
-    liveLink: "https://tekzy.netlify.app/"
+    liveLink: "https://ouchi-design.netlify.app/"
   },
-  {
-    id: 14,
-    name: "game wala",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/Tekzy",
-    language: ["react", "gsap"],
-    liveLink: "https://tekzy.netlify.app/"
-  },
-  {
-    id: 15,
-    name: "task",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
-    github: "https://github.com/Shubham-front384/URL-Shortner",
-    language: ["react", "scss", "node", "express"],
-    liveLink: "https://url-shortner-qs1f.onrender.com"
-  },
+  // {
+  //   id: 14,
+  //   name: "game wala",
+  //   image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+  //   github: "https://github.com/Shubham-front384/Tekzy",
+  //   language: ["react", "gsap"],
+  //   liveLink: "https://tekzy.netlify.app/"
+  // },
+  // {
+  //   id: 15,
+  //   name: "task",
+  //   image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+  //   github: "https://github.com/Shubham-front384/URL-Shortner",
+  //   language: ["react", "scss", "node", "express"],
+  //   liveLink: "https://url-shortner-qs1f.onrender.com"
+  // },
   {
     id: 16,
     name: "food reel",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: foodReelImg,
     github: "https://github.com/Shubham-front384/Food-Reel",
     language: ["react", "scss", "node", "express"],
     liveLink: "https://food-reel-2cry.onrender.com/"

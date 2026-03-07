@@ -10,10 +10,8 @@ const Nav = () => {
       const currentScroll = window.scrollY;
 
       if (currentScroll > lastScroll) {
-        // scroll down
         setShowNav(false);
       } else {
-        // scroll up
         setShowNav(true);
       }
 

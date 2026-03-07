@@ -36,7 +36,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="about-section" ref={sectionRef}>
+    <section className="about-section" ref={sectionRef} id="about">
       <h2>about me</h2>
 
       <div className="about-container" ref={wrapperRef}>
@@ -82,7 +82,7 @@ const About = () => {
 
             <ul className="award">
               <li>
-                <span>5</span>+
+                <span>3</span>
               </li>
               <li>award project</li>
             </ul>

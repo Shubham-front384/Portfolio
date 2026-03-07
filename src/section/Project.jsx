@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Project = () => {
   return (
-    <section className="project-section">
+    <section className="project-section" id="project">
       <div className="project-container">
         <h2>project</h2>
         <div className="projects">
