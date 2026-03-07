@@ -107,7 +107,7 @@ export const projects = [
     image: HungryTigerImg,
     github: "https://github.com/Shubham-front384/Hungry-Tiger",
     language: ["react", "gsap", "scss"],
-    liveLink: "https://tekzy.netlify.app/" // ye galat link hai abhi ke liye
+    liveLink: "https://hungry-website.netlify.app/"
   },
   {
     id: 13,
