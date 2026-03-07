@@ -1,13 +1,13 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
-import "./style.scss";
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import './style.scss';
+import qrImg from '../assets/Img/qr.jpeg'
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
+    user_name: '',
+    user_email: '',
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -22,24 +22,24 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_ky7s0mr",
-        "template_m6ey3al",
+        'service_ky7s0mr',
+        'template_m6ey3al',
         formData,
-        "Nelzg52iZGFJhlb-Z"
+        'Nelzg52iZGFJhlb-Z'
       )
       .then(
         () => {
-          alert("Message sent successfully ✅");
+          alert('Message sent successfully ✅');
 
           setFormData({
-            user_name: "",
-            user_email: "",
-            message: "",
+            user_name: '',
+            user_email: '',
+            message: '',
           });
         },
         (error) => {
           console.log(error);
-          alert("Something went wrong ❌");
+          alert('Something went wrong ❌');
         }
       );
   };
@@ -47,15 +47,12 @@ const Contact = () => {
   return (
     <section className="contact">
       <div className="contact-container">
-
         {/* LEFT SIDE */}
         <div className="contact-left">
-
           <h2>Wan'na Connect</h2>
           <p>Have a question or project idea? Send us a message.</p>
 
           <form onSubmit={handleSubmit}>
-
             <input
               type="text"
               name="user_name"
@@ -82,19 +79,14 @@ const Contact = () => {
               required
             ></textarea>
 
-            <button type="submit">
-              Send Message
-            </button>
-
+            <button type="submit">Send Message</button>
           </form>
-
         </div>
 
         {/* RIGHT SIDE IMAGE */}
         <div className="contact-right">
-          <img src="/images/contact.jpg" alt="contact" />
+          <img src={qrImg} alt="contact" />
         </div>
-
       </div>
     </section>
   );
