@@ -6,7 +6,7 @@ import { languageImg } from '../data/projects'
 
 import github from '../assets/Img/github.png';
 import code from '../assets/Img/code.png';
-import profileImg from '../assets/Img/power-ranger.png';
+import profileImg from '../assets/Img/profile.png';
 
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
@@ -65,6 +65,11 @@ const About = () => {
         <div className="about-panel">
           <div className="profile-img">
             <img src={profileImg} alt="" />
+
+            <div className="circles">
+              <div className="circle-one"></div>
+              <div className="circle-two"></div>
+            </div>
           </div>
 
           <div className="profile-status">

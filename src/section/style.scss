@@ -1,3 +1,63 @@
+// Nav
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.35s ease;
+
+  &.hide {
+    transform: translateY(-120%);
+  }
+
+  &.show {
+    transform: translateY(0);
+  }
+
+  .nav-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 22px;
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      a {
+        color: #F2EEC2;
+        text-decoration: none;
+        font-size: 1.15rem;
+        transition: 0.3s;
+
+        &:hover {
+          color: tomato;
+        }
+      }
+    }
+
+    .nav-btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid white;
+      background: tomato;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #8a3a2e;
+      }
+    }
+  }
+}
+
 // Home Section
 .home-section {
   height: 100dvh;
@@ -265,10 +325,35 @@
         font-size: 1.25rem;
       }
     }
+
+    .top-btn {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      display: inline-flex;
+      align-items: center;
+      z-index: 20;
+      background: #1a1a1a;
+
+      border: 1px solid;
+      padding: .5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-3px);
+        background: #222;
+      }
+    }
   }
 }
 
 // About Section
+.pin-spacer {
+  padding: 0 !important;
+}
+
 .about-section {
   height: 100dvh;
   overflow: hidden;
@@ -381,11 +466,60 @@
         display: inline-flex;
         align-items: flex-end;
         justify-content: center;
+        position: relative;
 
         img {
           width: 450px;
-          height: max-content;
+          height: 80%;
           object-fit: contain;
+        }
+
+        .circles {
+          .circle-one {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: tomato;
+            filter: blur(20px);
+
+            position: absolute;
+            top: 19%;
+            left: 0%;
+            z-index: -1;
+            animation: circleOne 2s ease-in-out infinite alternate;
+          }
+
+          .circle-two {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: tomato;
+            filter: blur(20px);
+
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            z-index: -1;
+            animation: circleTwo 2s ease-in-out infinite alternate;
+          }
+
+          @keyframes circleOne {
+            0% {
+              transform: translateY(-8px);
+            }
+            100% {
+              transform: translateY(8px);
+            }
+          }
+
+          @keyframes circleTwo {
+            0% {
+              transform: translateX(-8px);
+            }
+            100% {
+              transform: translateX(8px);
+            }
+          }
         }
       }
 
@@ -799,6 +933,24 @@
       }
 
       .about-panel:last-child {
+        .profile-img {
+          img {
+            height: 100%;
+          }
+
+          .circles {
+            .circle-one {
+              top: 10%;
+              left: 10%;
+            }
+
+            .circle-two {
+              top: 30%;
+              left: 35%;
+            }
+          }
+        }
+
         .profile-status {
           .project {
             left: 8%;
@@ -903,6 +1055,31 @@
     .contact-right {
       display: block;
       flex: 1;
+    }
+
+    // About
+    .about-section {
+      .about-container {
+        .about-panel:last-child {
+          .profile-img {
+            .circles {
+              .circle-one {
+                top: 7%;
+                left: 25%;
+                width: 400px;
+                height: 400px;
+              }
+
+              .circle-two {
+                top: 40%;
+                left: 45%;
+                width: 400px;
+                height: 400px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

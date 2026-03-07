@@ -7,6 +7,7 @@ import magicStudioImg from '../assets/Img/magicStudio.png'
 import colorGeneratorImg from '../assets/Img/colorGenerator.png'
 import solusImg from '../assets/Img/solus.png'
 import luxeDentalImg from '../assets/Img/luxeDental.png'
+import kanbanBoardImg from '../assets/Img/kanbanBoard.png'
 
 export const projects = [
   {
@@ -76,10 +77,10 @@ export const projects = [
   {
     id: 9,
     name: "kanban",
-    image: "https://images.pexels.com/photos/36076127/pexels-photo-36076127.jpeg",
+    image: kanbanBoardImg,
     github: "https://github.com/Shubham-front384/Kanban",
     language: ["html", "css", "js"],
-    liveLink: "https://tekzy.netlify.app/"
+    liveLink: "https://kanban-task-proj.netlify.app/"
   },
   {
     id: 10,

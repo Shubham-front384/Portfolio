@@ -51,7 +51,7 @@ const Contact = () => {
         {/* LEFT SIDE */}
         <div className="contact-left">
 
-          <h2>Contact Us</h2>
+          <h2>Wan'na Connect</h2>
           <p>Have a question or project idea? Send us a message.</p>
 
           <form onSubmit={handleSubmit}>
