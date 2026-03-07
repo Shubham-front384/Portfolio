@@ -2,22 +2,21 @@ import './style.scss';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { languageImg } from '../data/projects'
+
+import { languageImg } from '../data/projects';
 
 import github from '../assets/Img/github.png';
 import code from '../assets/Img/code.png';
 import profileImg from '../assets/Img/profile.png';
 
 gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
   const sectionRef = useRef(null);
   const wrapperRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      /* -------------------------------
-      HORIZONTAL SCROLL PANELS
-      -------------------------------- */
       const panels = gsap.utils.toArray('.about-panel');
 
       gsap.to(panels, {
@@ -28,6 +27,20 @@ const About = () => {
           pin: true,
           scrub: 1,
           end: () => '+=' + wrapperRef.current.offsetWidth,
+        },
+      });
+
+      /* -------------------------------
+      MARQUEE ON LI
+      -------------------------------- */
+
+      gsap.to('.languages li', {
+        x: '-=400',
+        duration: 6,
+        ease: 'none',
+        repeat: -1,
+        stagger: {
+          each: 0.2,
         },
       });
     }, sectionRef);
@@ -41,6 +54,7 @@ const About = () => {
 
       <div className="about-container" ref={wrapperRef}>
         {/* PANEL 1 */}
+
         <div className="about-panel">
           <div className="profile-info">
             <h3 className="profile-heading">
@@ -87,14 +101,14 @@ const About = () => {
               <li>award project</li>
             </ul>
 
+            {/* LANGUAGES */}
+
             <ul className="languages">
-              {
-                languageImg.map((item) => (
-                  <li key={item.id}>
-                    <img src={item.image} alt="sticker" />
-                  </li>
-                ))
-              }
+              {[...languageImg, ...languageImg].map((item, index) => (
+                <li key={index}>
+                  <img src={item.image} alt="sticker" />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
